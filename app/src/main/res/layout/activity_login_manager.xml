@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scaleType="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity_manager">
+
+
+    <ImageView
+        android:src="@drawable/bg"
+        android:id="@+id/bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:scaleType="center">
+
+
+        <ImageView
+            android:id="@+id/logo_injector"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo_injector"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/logo_bluetext"
+            android:layout_width="120dp"
+            android:layout_height="85dp"
+            android:src="@drawable/logo_bluetext"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:fontFamily="@font/medium"
+                android:textColor="#82D3E0"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:fontFamily="@font/medium"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/pw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="비밀번호"
+                android:textColor="#82D3E0"
+                android:fontFamily="@font/medium"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/edittext_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/medium"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btn_round"
+            android:fontFamily="@font/medium"
+            android:text="로그인"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/signup_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/text"
+            android:layout_marginBottom="-5dp"
+            android:text="백신나우가 처음이신가요?"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_usersignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-15dp"
+            android:background="#00FFFFFF"
+            android:fontFamily="@font/text"
+            android:text="@string/btn_usersignup"
+            android:textColor="#82D3E0"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_hospitalsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/text"
+            android:background="#00FFFFFF"
+            android:textColor="#82D3E0"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

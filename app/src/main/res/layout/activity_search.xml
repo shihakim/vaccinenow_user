@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/nav_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/search_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="검색하기"
+            android:textColor="#474747"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/whiteroundrec"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/bluedot1"
+                        android:layout_width="10dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/bluedot" />
+
+                    <TextView
+                        android:id="@+id/diseasename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="#474747"
+                        android:textSize="20sp"
+                        android:text="병명" />
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/disease_spinner"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="-10dp" />
+
+                <ImageView
+                    android:id="@+id/blueline"
+                    android:layout_width="255dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="3dp"
+                    app:srcCompat="@drawable/blueline" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/whiteroundrec"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/bluedot2"
+                        android:layout_width="10dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="18dp"
+                        android:layout_marginRight="10dp"
+                        app:srcCompat="@drawable/bluedot" />
+
+                    <TextView
+                        android:id="@+id/vaccinename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/semibold"
+                        android:textColor="#474747"
+                        android:textSize="20sp"
+                        android:text="백신명" />
+                </LinearLayout>
+                <Spinner
+                    android:id="@+id/vaccine_spinner"
+                    android:layout_width="300dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="-10dp" />
+
+                <ImageView
+                    android:id="@+id/blueline2"
+                    android:layout_width="255dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_height="3dp"
+                    app:srcCompat="@drawable/blueline" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/skybluerec"
+                android:fontFamily="@font/semibold"
+                android:textSize="20sp"
+                android:textColor="#474747"
+                android:text="완료" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

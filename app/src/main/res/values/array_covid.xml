@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_covid">
+        <item>아스트라제네카</item>
+        <item>화이자</item>
+        <item>얀센</item>
+        <item>모더나</item>
+    </string-array>
+</resources>

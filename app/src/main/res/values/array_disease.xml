@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_disease">
+        <item>코로나19</item>
+        <item>인플루엔자(3가)</item>
+        <item>인플루엔자(4가)</item>
+    </string-array>
+</resources>

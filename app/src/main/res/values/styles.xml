@@ -1,0 +1,27 @@
+    <resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorControlActivated">@color/yellow</item>
+        <item name="colorControlNormal">@color/blue</item>
+        <item name="android:textSelectHandle">@color/blue</item>
+        <item name="android:textColorHighlight">@color/transparent_blue</item>
+        <item name="android:textCursorDrawable">@color/blue</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="ThemeOverlay.AppCompat.navTheme">
+        <item name="android:fontFamily">@font/medium</item>
+        <item name="android:textSize">19sp</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorControlHighlight">@color/blue</item>
+    </style>
+</resources>

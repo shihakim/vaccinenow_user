@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_4type">
+        <item>박씨그리프테트라</item>
+        <item>지씨플루쿼드리밸런트</item>
+        <item>플루아릭스테트라</item>
+        <item>스카이셀플루</item>
+    </string-array>
+</resources>

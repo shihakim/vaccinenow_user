@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <ImageView
+            android:src="@drawable/bg"
+            android:id="@+id/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:scaleType="center">
+
+
+            <ImageView
+                android:id="@+id/logo_injector"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_injector"
+                android:layout_marginTop="40dp" />
+
+            <ImageView
+                android:id="@+id/logo_bluetext"
+                android:src="@drawable/logo_bluetext"
+                android:layout_width="120dp"
+                android:layout_height="85dp"
+                android:layout_marginBottom="-20dp"
+                android:layout_gravity="center" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이메일"
+                        android:fontFamily="@font/medium"
+                        android:textColor="#82D3E0"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText_email"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/medium"
+                        android:ems="10"
+                        android:textSize="15dp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:text="비밀번호"
+                        android:textColor="#82D3E0"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText_passWord"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:inputType="textPassword"
+                        android:fontFamily="@font/medium"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/hospital_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:text="이름"
+                        android:textColor="#82D3E0"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText_hospital_name"
+                        android:layout_width="300dp"
+                        android:fontFamily="@font/medium"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/hospital_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:text="전화번호"
+                        android:textColor="#82D3E0"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText_hospital_call"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/medium"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+                        android:id="@+id/hospital_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/medium"
+                        android:text="나이"
+                        android:textColor="#82D3E0"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/editText_hospital_age"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/medium"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_join"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/btn_round"
+                        android:fontFamily="@font/medium"
+                        android:text="회원가입"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+            </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
